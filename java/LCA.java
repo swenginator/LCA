@@ -4,15 +4,18 @@ import java.util.Set;
 public class LCA {
 
     public static void main(String... args) {
-        // Create a simple test tree
         Node<Integer> root = new Node<>(0);
         Node<Integer> node1 = new Node<>(1);
         Node<Integer> node2 = new Node<>(2);
+        Node<Integer> node3 = new Node<>(3);
+        Node<Integer> node4 = new Node<>(4);
 
         root.children.add(node1);
         root.children.add(node2);
+        node1.children.add(node3);
+        node1.children.add(node4);
 
-        Node<Integer> lca = getLCA(root, node1, node2);
+        Node<Integer> lca = getLCA(root, node3, node4);
         System.out.println("LCA: " + lca.data);
 
     }
