@@ -11,8 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 class LCATest {
     /**
      * Test with a fairly simple tree structure
-     * (0)
-     * (1)   (2)
+     *       (0)
+     *   (1)     (2)
      * (3)  (4)
      */
     LCA.Node<Integer> root = new LCA.Node<>(0);
